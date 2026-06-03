@@ -57,8 +57,7 @@ public class Person {
         Person other = (Person) target;
 
         return Objects.equals(name, other.name)
-                && Objects.equals(surname, other.surname)
-                && (gender == other.gender);
+                && Objects.equals(surname, other.surname);
     }
 
     @Override

@@ -6,7 +6,7 @@ import people.Director;
 import people.Gender;
 import people.Person;
 
-public class Main {
+public class Theatre {
     public static void main(String[] args) {
         Actor actor1 = new Actor("Иван", "Петров", Gender.MALE, 180);
         Actor actor2 = new Actor("Анна", "Смирнова", Gender.FEMALE, 168);

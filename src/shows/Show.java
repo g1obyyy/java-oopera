@@ -9,7 +9,7 @@ public class Show {
     private String title;
     private int duration;
     private Director director;
-    private final ArrayList<Actor> actors = new ArrayList<>();
+    private final ArrayList<Actor> actors = new ArrayList<Actor>();
 
     /* CONSTRUCTORS */
 
