@@ -9,13 +9,7 @@ public class Person {
 
     /* CONSTRUCTORS */
 
-    protected Person() {
-        name = null;
-        surname = null;
-        gender = null;
-    }
-
-    protected Person(String newName, String newSurname, Gender newGender) {
+    public Person(String newName, String newSurname, Gender newGender) {
         name = newName;
         surname = newSurname;
         gender = newGender;

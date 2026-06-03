@@ -7,11 +7,6 @@ public class Actor extends Person {
 
     /* CONSTRUCTORS */
 
-    public Actor() {
-        super();
-        height = 0;
-    }
-
     public Actor(String newName, String newSurname, Gender newGender, int newHeight) {
         super(newName, newSurname, newGender);
         height = newHeight;

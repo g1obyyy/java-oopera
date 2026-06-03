@@ -7,11 +7,6 @@ public class Director extends Person {
 
     /* CONSTRUCTORS */
 
-    public Director() {
-        super();
-        numberOfShows = 0;
-    }
-
     public Director(String newName, String newSurname, Gender newGender, int numberOfShows) {
         super(newName, newSurname, newGender);
         this.numberOfShows = numberOfShows;
