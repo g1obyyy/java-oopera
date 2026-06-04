@@ -3,7 +3,7 @@ package people;
 import java.util.Objects;
 
 public class Director extends Person {
-    private int numberOfShows;
+    private final int numberOfShows;
 
     /* CONSTRUCTORS */
 
@@ -16,27 +16,5 @@ public class Director extends Person {
 
     public int getNumberOfShows() {
         return numberOfShows;
-    }
-
-    public void setNumberOfShows(int numberOfShows) {
-        this.numberOfShows = numberOfShows;
-    }
-
-    /* OVERRIDE FUNCTIONS */
-
-    @Override
-    public boolean equals(Object target) {
-        if (!super.equals(target)) {
-            return false;
-        }
-
-        Director other = (Director) target;
-
-        return numberOfShows == other.numberOfShows;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), numberOfShows);
     }
 }

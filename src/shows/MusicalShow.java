@@ -4,8 +4,8 @@ import people.Director;
 import people.Person;
 
 public class MusicalShow extends Show {
-    private Person musicAuthor;
-    private String librettoText;
+    private final Person musicAuthor;
+    private final String librettoText;
 
     /* CONSTRUCTORS */
 
@@ -22,17 +22,10 @@ public class MusicalShow extends Show {
         return musicAuthor;
     }
 
-    public void setMusicAuthor(Person musicAuthor) {
-        this.musicAuthor = musicAuthor;
-    }
-
     public String getLibrettoText() {
         return librettoText;
     }
 
-    public void setLibrettoText(String librettoText) {
-        this.librettoText = librettoText;
-    }
 
     public void printLibretto() {
         System.out.println(librettoText);

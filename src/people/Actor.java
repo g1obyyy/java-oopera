@@ -3,7 +3,7 @@ package people;
 import java.util.Objects;
 
 public class Actor extends Person {
-    private int height;
+    private final int height;
 
     /* CONSTRUCTORS */
 
@@ -18,26 +18,28 @@ public class Actor extends Person {
         return height;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
     /* OVERRIDE FUNCTIONS */
 
     @Override
     public boolean equals(Object target) {
-        if (!super.equals(target)) {
+        if (this == target) {
+            return true;
+        }
+
+        if (target == null || getClass() != target.getClass()) {
             return false;
         }
 
         Actor other = (Actor) target;
 
-        return height == other.height;
+        return height == other.height
+                && Objects.equals(getName(), other.getName())
+                && Objects.equals(getSurname(), other.getSurname());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), height);
+        return Objects.hash(getName(), getSurname(), height);
     }
 
     @Override

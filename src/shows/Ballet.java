@@ -4,7 +4,7 @@ import people.Director;
 import people.Person;
 
 public class Ballet extends MusicalShow {
-    private Person choreographer;
+    private final Person choreographer;
 
     public Ballet(String title, int duration, Director director,
                   Person musicAuthor, String librettoText,
@@ -17,9 +17,5 @@ public class Ballet extends MusicalShow {
 
     public Person getChoreographer() {
         return choreographer;
-    }
-
-    public void setChoreographer(Person choreographer) {
-        this.choreographer = choreographer;
     }
 }

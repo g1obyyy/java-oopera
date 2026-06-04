@@ -4,7 +4,7 @@ import people.Director;
 import people.Person;
 
 public class Opera extends MusicalShow {
-    private int choirSize;
+    private final int choirSize;
 
     public Opera(String title, int duration, Director director,
                  Person musicAuthor, String librettoText,
@@ -17,9 +17,5 @@ public class Opera extends MusicalShow {
 
     public int getChoirSize() {
         return choirSize;
-    }
-
-    public void setChoirSize(int choirSize) {
-        this.choirSize = choirSize;
     }
 }

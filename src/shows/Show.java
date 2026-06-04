@@ -6,9 +6,9 @@ import people.Director;
 import java.util.ArrayList;
 
 public class Show {
-    private String title;
-    private int duration;
-    private Director director;
+    private final  String title;
+    private final int duration;
+    private final Director director;
     private final ArrayList<Actor> actors = new ArrayList<Actor>();
 
     /* CONSTRUCTORS */
@@ -25,25 +25,14 @@ public class Show {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public int getDuration() {
         return duration;
-    }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
     }
 
     public Director getDirector() {
         return director;
     }
 
-    public void setDirector(Director director) {
-        this.director = director;
-    }
 
     public void printDirector() {
         System.out.println(director);
