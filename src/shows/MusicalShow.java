@@ -16,7 +16,7 @@ public class MusicalShow extends Show {
         this.librettoText = librettoText;
     }
 
-    /* GETTERS and SETTERS */
+    /* GETTERS */
 
     public Person getMusicAuthor() {
         return musicAuthor;

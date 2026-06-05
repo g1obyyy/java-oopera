@@ -13,7 +13,7 @@ public class Opera extends MusicalShow {
         this.choirSize = choirSize;
     }
 
-    /* GETTERS and SETTERS */
+    /* GETTERS */
 
     public int getChoirSize() {
         return choirSize;

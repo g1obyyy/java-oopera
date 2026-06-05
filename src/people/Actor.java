@@ -12,13 +12,11 @@ public class Actor extends Person {
         height = newHeight;
     }
 
-    /* GETTERS and SETTERS */
+    /* GETTERS */
 
     public int getHeight() {
         return height;
     }
-
-    /* OVERRIDE FUNCTIONS */
 
     @Override
     public boolean equals(Object target) {
@@ -32,9 +30,9 @@ public class Actor extends Person {
 
         Actor other = (Actor) target;
 
-        return height == other.height
-                && Objects.equals(getName(), other.getName())
-                && Objects.equals(getSurname(), other.getSurname());
+        return Objects.equals(getName(), other.getName())
+                && Objects.equals(getSurname(), other.getSurname())
+                && height == other.height;
     }
 
     @Override

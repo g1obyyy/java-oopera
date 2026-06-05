@@ -19,7 +19,7 @@ public class Show {
         this.director = director;
     }
 
-    /* GETTERS and SETTERS */
+    /* GETTERS */
 
     public String getTitle() {
         return title;

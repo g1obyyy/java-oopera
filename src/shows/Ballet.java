@@ -13,7 +13,7 @@ public class Ballet extends MusicalShow {
         this.choreographer = choreographer;
     }
 
-    /* GETTERS and SETTERS */
+    /* GETTERS */
 
     public Person getChoreographer() {
         return choreographer;

@@ -15,7 +15,7 @@ public class Person {
         gender = newGender;
     }
 
-    /* GETTERS and SETTERS */
+    /* GETTERS */
 
     public String getName() {
         return name;
@@ -29,11 +29,29 @@ public class Person {
         return gender;
     }
 
-
-    /* OVERRIDE FUNCTIONS */
-
     @Override
     public String toString() {
         return name + " " + surname;
+    }
+
+    @Override
+    public boolean equals(Object target) {
+        if (this == target) {
+            return true;
+        }
+
+        if (target == null || getClass() != target.getClass()) {
+            return false;
+        }
+
+        Person other = (Person ) target;
+
+        return Objects.equals(getName(), other.getName())
+                && Objects.equals(getSurname(), other.getSurname());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name , surname);
     }
 }
