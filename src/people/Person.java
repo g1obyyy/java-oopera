@@ -46,12 +46,13 @@ public class Person {
 
         Person other = (Person ) target;
 
-        return Objects.equals(getName(), other.getName())
-                && Objects.equals(getSurname(), other.getSurname());
+        return Objects.equals(name, other.name)
+                && Objects.equals(surname, other.surname)
+                && gender == other.gender;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name , surname);
+        return Objects.hash(name , surname, gender);
     }
 }
